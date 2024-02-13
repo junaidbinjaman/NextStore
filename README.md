@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 # Travel Blog Frontend Template
 
 This is an open-source frontend template for a travel blog website. It provides a user-friendly interface for showcasing travel destinations, stories, and photos.
