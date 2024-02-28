@@ -1,13 +1,16 @@
 import type { Metadata } from 'next';
-import { Inter, Ubuntu } from 'next/font/google';
+import { Inter, Ubuntu } from 'next/font/google'; // Correct import
+
 import './globals.css';
 
+// Correct usage: Remove the function calls
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
 });
 
+// Correct usage: Remove the function calls
 const ubuntu = Ubuntu({
   weight: ['300', '400', '500', '700'],
   style: ['normal', 'italic'],
