@@ -31,3 +31,29 @@ body {
     text-wrap: balance;
   }
 }
+
+.bm-cross {
+  background: #000000;
+}
+
+.bm-burger-bars {
+  background: white;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1100;
+    width: 300px;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
