@@ -2,18 +2,15 @@ import React, { useState } from 'react';
 import { IoMdMenu } from 'react-icons/io';
 import { IoMdListBox } from 'react-icons/io';
 import { IoReturnDownBack } from 'react-icons/io5';
+import Link from 'next/link';
 
 interface HeaderProps {
   topbarLeft: string;
   logo: string;
-  navbar: [
-    key: string,
-    key: string,
-    key: string,
-    key: string,
-    key?: string,
-    key?: string,
-  ];
+  navbar: {
+    label: string;
+    link: string;
+  }[];
 }
 
 const HeaderMobile: React.FC<HeaderProps> = ({ topbarLeft, logo, navbar }) => {
@@ -46,11 +43,11 @@ const HeaderMobile: React.FC<HeaderProps> = ({ topbarLeft, logo, navbar }) => {
       >
         <ul>
           {navbar.map((element, index) => (
-            <li
-              key={index}
-              className="flex items-center gap-2 pb-2 cursor-pointer active:scale-90"
-            >
-              <IoMdListBox className="text-xl text-yellow-700" /> {element}
+            <li key={index} className="pb-2 active:scale-90">
+              <Link href={element.link} className="flex items-center gap-2">
+                <IoMdListBox className="text-xl text-yellow-700" />
+                {element.label}
+              </Link>
             </li>
           ))}
         </ul>

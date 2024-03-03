@@ -14,7 +14,7 @@ export const TabletHeader: Story = {
     topbarLeft: 'Free shipping for all orders of $150+',
     topbarRight1: 'Mon - Fri 8:00 - 18:00 / Sunday 8:00 - 14:00',
     logo: 'Junaid',
-    navbar: ['Home', 'Shop', 'blog', 'Contact'],
+    navbar: [{label: 'Home', link: '/'}, {label: 'Shop', link: '/shop'}, {label: 'Blog', link: '/blog'}, {label: 'Contact Us', link: '/contact'}],
     cartHandler: () => console.log('hello, World'),
     accountHandler: () => console.log('hello, World')
   },

@@ -33,19 +33,19 @@ const Product: React.FC<ProductProps> = ({
   };
 
   return (
-    <div className="w-[302.9px] bg-white">
+    <div className="w-[302.9px] bg-white shadow-[0px_1px_1px_0px_rgba(0,0,0,0.25)]">
       <div className="mx-auto w-fit pt-5">
         <div
           style={productThumbnail}
           className="w-[252.25px] h-[284.97px] flex items-start justify-between p-3 rounded-lg cursor-pointer"
         >
           {isNew && (
-            <small className="bg-green-400 text-white text-[12px] font-ubuntu inline px-[14px] py-1 rounded-md">
+            <small className="bg-green-400 text-white text-[12px] font-ubuntu inline px-[14px] py-1 rounded-md cursor-auto">
               New
             </small>
           )}
           {discount && (
-            <small className="bg-red-600 text-white text-[12px] font-ubuntu inline px-[14px] py-1 rounded-md">
+            <small className="bg-red-600 text-white text-[12px] font-ubuntu inline px-[14px] py-1 rounded-md cursor-auto">
               -${discount}
             </small>
           )}
@@ -58,16 +58,16 @@ const Product: React.FC<ProductProps> = ({
             {title}
           </h3>
 
-          <div className="flex items-center mt-6 mb-3">
+          <div className="flex items-center mt-4 mb-4">
             {Array.from({ length: 5 }).map((_, index) => {
               return index < avgRating ? (
-                <FaStar key={index} className="text-yellow-700 text-lg" />
+                <FaStar key={index} className="text-yellow-300 text-lg" />
               ) : (
-                <FaRegStar key={index} className="text-yellow-700 text-lg" />
+                <FaRegStar key={index} className="text-yellow-300 text-lg" />
               );
             })}
 
-            <small className="ml-1">({totalRating})</small>
+            <small className="ml-1 text-[13px] font-normal font-ubuntu text-stone-400">({totalRating})</small>
           </div>
         </div>
       </div>

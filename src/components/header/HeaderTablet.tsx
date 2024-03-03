@@ -3,19 +3,16 @@ import { FaRegClock } from 'react-icons/fa';
 import { FaRegUser } from 'react-icons/fa';
 import { LuShoppingCart } from 'react-icons/lu';
 import Button from '../button/Button';
+import Link from 'next/link';
 
 interface HeaderProps {
   topbarLeft: string;
   topbarRight1: string;
   logo: string;
-  navbar: [
-    key: string,
-    key: string,
-    key: string,
-    key: string,
-    key?: string,
-    key?: string,
-  ];
+  navbar: {
+    label: string;
+    link: string;
+  }[];
   cartHandler: () => void;
   accountHandler: () => void;
 }
@@ -49,7 +46,7 @@ const HeaderTablet: React.FC<HeaderProps> = ({
                 key={index}
                 className="transition-all cursor-pointer active:scale-75"
               >
-                {element}
+                <Link href={element.link}>{element.label}</Link>
               </li>
             ))}
           </ul>

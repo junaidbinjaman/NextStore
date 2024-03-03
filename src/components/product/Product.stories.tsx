@@ -17,7 +17,7 @@ export const FirstStory: Story = {
     category: 'How Cloth',
     title: 'New product is here for grab',
     totalRating: 32,
-    avgRating: 4,
+    avgRating: 3,
     regularPrice: 300,
     salePrice: 260
   },

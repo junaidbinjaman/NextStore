@@ -13,7 +13,7 @@ export const MobileHeader: Story = {
   args: {
     topbarLeft: 'Free shipping for all orders of $150+',
     logo: 'Junaid',
-    navbar: ['Home', 'Shop', 'blog', 'Contact'],
+    navbar: [{label: 'Home', link: '/'}, {label: 'Shop', link: '/shop'}, {label: 'Blog', link: '/blog'}, {label: 'Contact Us', link: '/contact'}],
   },
   
 };

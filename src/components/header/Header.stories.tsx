@@ -16,7 +16,7 @@ export const DesktopHeader: Story = {
     topbarRight2: '1- 800-458-85968',
     topbarRight3: '47 Bakery Street, London UK',
     logo: 'Junaid',
-    navbar: ['Home', 'Shop', 'blog', 'Contact'],
+    navbar: [{label: 'Home', link: '/'}, {label: 'Shop', link: '/shop'}, {label: 'Blog', link: '/blog'}, {label: 'Contact Us', link: '/contact'}],
     cartHandler: () => console.log('hello, World'),
     accountHandler: () => console.log('hello, World')
   },
