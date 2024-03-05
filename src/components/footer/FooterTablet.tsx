@@ -33,7 +33,7 @@ const FooterTablet: React.FC<FooterProps> = ({
             <h2 className="text-[35px] font-bold text-white font-inter">
               {logo}
             </h2>
-            <ul>
+            <ul className='text-white'>
               <li className="text-[18px] font-ubuntu font-normal mt-[10px]">
                 <MdLocalPhone className="text-[24px] inline mr-[10px]" />{' '}
                 {phone}
@@ -49,8 +49,8 @@ const FooterTablet: React.FC<FooterProps> = ({
             </ul>
           </div>
           <div>
-            <h3 className="font-inter text-[22px] font-medium">{metaTitle}</h3>
-            <p className="font-ubuntu text-base font-normal leading-[23px] w-[365px] mt-3">
+            <h3 className="font-inter text-[22px] font-medium text-white">{metaTitle}</h3>
+            <p className="font-ubuntu text-base font-normal leading-[23px] w-[365px] mt-3 text-white">
               {description}
             </p>
             <SubscriptionInput className="mt-5" />
@@ -58,11 +58,11 @@ const FooterTablet: React.FC<FooterProps> = ({
         </div>
         <div className="flex justify-between border-t-[1px] border-[rgba(255, 255, 255, 0.20)]">
           <div className="p-5">
-            <p className="font-ubuntu text-base font-normal leading-[23px]">
+            <p className="font-ubuntu text-base font-normal leading-[23px] text-white">
               {copyright}
             </p>
           </div>
-          <div className="flex font-[24px] gap-4 cursor-pointer p-5">
+          <div className="flex font-[24px] gap-4 cursor-pointer p-5 text-white">
             {footerIcons.map((Icon, index) =>
               React.isValidElement(Icon) ? (Icon as React.ReactElement) : null,
             )}
