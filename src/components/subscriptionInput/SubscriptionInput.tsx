@@ -22,7 +22,7 @@ const SubscriptionInput: React.FC<SubscriptionInputProps> = ({
       <FaRegEnvelope className={`text-[24px] text-${color}`} />
       <div className="flex items-center gap-[10px]">
         <input
-          className={`text-base font-normal leading-[23px] font-ubuntu bg-${backgroundColor} text-white focus:outline-none focus:border-transparent`}
+          className="text-base font-normal leading-[23px] font-ubuntu bg-transparent text-white focus:outline-none focus:border-transparent"
           type="email"
           placeholder={placeholder}
         />
